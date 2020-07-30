@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+      APICORE_WEBAPP:
+        container_name: myapi111
+        image: apicore_webapp
+        ports:
+         - "2101:80"
+        dockerfile: APICORE_WEBAPP/dockerfile
+      
+
+      API2:
+        container_name: myapi
+        image: api2
+        ports:
+         - "2102:80"
+        dockerfile: API2/dockerfile
+        
